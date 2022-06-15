@@ -8,6 +8,37 @@
 *::after {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+:root {
+  --div-background-color: rgb(99, 99, 99);
+  --text-color: black;
+  --div-padding: 0px;
+  --div-margin: 0px;
+}
+
+.child {
+  background-color: var(--div-background-color);
+  color: var(--text-color);
+}
+
+.one {
+  --div-background-color: rgb(159, 159, 199);
+}
+
+.two {
+  --text-color: white;
+}
+
+.two-two {
+  --text-color: orange;
+  padding: var(--div-padding);
+  margin: var(--div-margin);
+}
+.two-three {
+  --text-color: orange;
+  padding: var(--div-padding);
+  margin: var(--div-margin);
+}
 .block {
   float: left;
   width: 33.3%;
@@ -83,7 +114,9 @@ body {
   font-weight: normal; */
   /* same as above */
   font: normal 16px Arial, Helvetica, sans-serif;
-  line-height: 1em;
+  /* dependant on variable, otherwise color */
+  background-color: var(--background-color, pink);
+  /* line-height: 1em; */
 }
 
 body .green {
@@ -119,12 +152,52 @@ body .blue {
   /* font-style: italic; */
 }
 
+/* card  */
 .card {
   background: white;
   padding: 1rem;
   border: 1px solid #afafaf;
   border-radius: 0.25rem;
 }
+
+.card-header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  font-size: 0.9rem;
+  /* no margin on body */
+}
+.card-footer {
+  margin-top: 1rem;
+}
+
+.btn {
+  /* color variable */
+  --color: hsl(200, 50%, 50%);
+  background: var(--color);
+  color: rgb(61, 61, 61);
+  border: none;
+  font-size: 1rem;
+  /* padding em for scaling */
+  padding: 0.5em 0.75em;
+  /* rounded edges */
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: hsl(200, 50%, 70%);
+}
+
+.btn.btn-outline {
+  background: none;
+  border: 1px solid var(--color);
+  color: var(--color);
+}
+
 .text-box1 {
   background-color: #afafaf;
   /* size color type */

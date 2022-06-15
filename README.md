@@ -48,3 +48,8 @@ everything
 Worst - inline (in html)
 Mid - style element html
 Best - external css (link element)
+
+#Cards
+
+1. social media (twitter card), bordered space, with some text, header, footer with buttons.
+   Deck of cards

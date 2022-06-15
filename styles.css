@@ -3,6 +3,11 @@
   padding: 0;
 } */
 
+*,
+*::before,
+*::after {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .block {
   float: left;
   width: 33.3%;
@@ -11,22 +16,9 @@
   box-sizing: border-box;
 }
 
-#main-block {
-  float: left;
-  width: 70%;
-}
-
-#sidebar {
-  float: right;
-  width: 30%;
-  background-color: #000;
-  color: rgb(255, 255, 255);
-  padding: 15px;
-  box-sizing: border-box;
-}
 .my-form {
   padding: 10px;
-  color: rgb(172, 0, 0);
+  color: rgb(68, 68, 68);
 }
 
 .my-form label {
@@ -77,12 +69,12 @@
 }
 /* button styling */
 
-.zap {
-  color: rgb(191, 194, 180);
+.h1class {
+  color: rgb(23, 24, 21);
 }
 
 h1 {
-  color: red;
+  color: rgb(37, 37, 37);
 }
 
 body {
@@ -124,9 +116,15 @@ body .blue {
 .container h2 {
   font-family: Tahoma;
   font-weight: 800;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
+.card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #afafaf;
+  border-radius: 0.25rem;
+}
 .text-box1 {
   background-color: #afafaf;
   /* size color type */
@@ -186,8 +184,9 @@ a:active {
   /* width: 10rem; */
   padding: 20px;
   margin: 10px;
-  border: 10px solid salmon;
-  background-color: forestgreen;
+  border: 10px solid rgb(21, 185, 76);
+  background-color: rgb(166, 194, 166);
+  float: right;
 }
 
 #box2 {
@@ -195,7 +194,20 @@ a:active {
   width: 50px;
   padding: 10px;
   margin: 10px;
-  border: 5px solid rgb(219, 22, 0);
-  background-color: rgb(62, 34, 139);
+  border: 5px solid rgb(13, 63, 155);
+  background-color: rgb(181, 166, 221);
   float: right;
+}
+#main-block {
+  float: left;
+  width: 70%;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  box-sizing: border-box;
 }

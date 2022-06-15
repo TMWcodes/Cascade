@@ -63,38 +63,6 @@
   width: 100%;
 }
 
-/* submit button */
-/* .my-form input[type="submit"] {
-  background-color: #08007a;
-  color: #ffffff;
-  padding: 20px, 15px;
-  border: none;
-} */
-.button1 {
-  background-color: #222222;
-  /* width: 5%; */
-  color: #ffffff;
-  padding: 10px 15px;
-  border: none;
-}
-
-.button1:hover {
-  background: red;
-  color: white;
-}
-
-/* read more button */
-.button2 {
-  background-color: #662020;
-  /* width: 5%; */
-  color: #ffffff;
-  padding: 5px 5px;
-  border: none;
-}
-.button2:hover {
-  background: red;
-  color: white;
-}
 .form-group {
   padding-bottom: 10px;
 }
@@ -196,6 +164,49 @@ body .blue {
   background: none;
   border: 1px solid var(--color);
   color: var(--color);
+}
+
+.btn.btn-outline:hover,
+.btn.btn-outline:focus {
+  background: hsl(200, 50%, 90%);
+}
+
+/* button next to another button, add margin */
+.btn + .btn {
+  margin-left: 0.5rem;
+}
+
+/* submit button */
+/* .my-form input[type="submit"] {
+  background-color: #08007a;
+  color: #ffffff;
+  padding: 20px, 15px;
+  border: none;
+} */
+.button1 {
+  background-color: #222222;
+  /* width: 5%; */
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.button1:hover {
+  background: red;
+  color: white;
+}
+
+/* read more button */
+.button2 {
+  background-color: #662020;
+  /* width: 5%; */
+  color: #ffffff;
+  padding: 5px 5px;
+  border: none;
+}
+.button2:hover {
+  background: red;
+  color: white;
 }
 
 .text-box1 {

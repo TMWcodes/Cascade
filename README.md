@@ -49,7 +49,13 @@ Worst - inline (in html)
 Mid - style element html
 Best - external css (link element)
 
+#Page themes
+
+default
+light
+dark
+
 #Cards
 
-1. social media (twitter card), bordered space, with some text, header, footer with buttons.
-   Deck of cards
+social media (twitter card), bordered space, with some text, header, footer with buttons, adapts to browser size.
+Deck of cards

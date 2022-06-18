@@ -124,10 +124,13 @@ body .blue {
 
 /* card  */
 .card {
+  --padding: 1rem;
+  /* padding: 1rem; */
   background: white;
-  padding: 1rem;
   border: 1px solid #afafaf;
   border-radius: 0.25rem;
+  /* hides overflow (corners) */
+  overflow: hidden;
 }
 .card.card-shadow {
   border: none;
@@ -144,16 +147,39 @@ body .blue {
   align-items: flex-start;
 }
 .card-header {
+  padding:var()
+  padding-bottom: 0;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+}
+.card-header.card-image > img {
+  display: block;
+  width: 100%;
+  /* max-width: 600px; */
+  max-height: 250px;
+  aspect-ratio: 16 / 9;
+  /* maintains aspect ratio */
+  object-fit: cover;
+  /* focus on centre */
+  object-position: center;
+  transition: 100ms transform ease-in-out;
+  /* padding: 0; */
+}
+
+/* when hovering over zoom in effect */
+.card:hover > .card-header.card-image > img {
+  transform: scale(1.025);
 }
 
 .card-body {
   font-size: 0.9rem;
+  padding: 0 var(--padding);
   /* no margin on body */
 }
 .card-footer {
   margin-top: 1rem;
+  padding: var(--padding);
+  padding-top: 0;
 }
 
 .btn {

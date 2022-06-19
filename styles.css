@@ -129,13 +129,19 @@ body .blue {
   background: white;
   border: 1px solid #afafaf;
   border-radius: 0.25rem;
-  /* hides overflow (corners) */
-  overflow: hidden;
 }
+
 .card.card-shadow {
   border: none;
   /* x offset, y offset, blur, spread, color*/
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  padding: var(--padding);
+  padding-bottom: 0;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* //adaptive option for cards  */
@@ -146,12 +152,13 @@ body .blue {
   gap: 1rem;
   align-items: flex-start;
 }
-.card-header {
-  padding:var()
-  padding-bottom: 0;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+
+.card-header.card-image {
+  padding: 0;
+  /* hides overflow (corners) */
+  overflow: hidden;
 }
+
 .card-header.card-image > img {
   display: block;
   width: 100%;
@@ -163,7 +170,6 @@ body .blue {
   /* focus on centre */
   object-position: center;
   transition: 100ms transform ease-in-out;
-  /* padding: 0; */
 }
 
 /* when hovering over zoom in effect */
@@ -335,4 +341,70 @@ a:active {
   color: rgb(255, 255, 255);
   padding: 15px;
   box-sizing: border-box;
+}
+
+.rpg-base {
+  width: 20vw;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: black; */
+  overflow: hidden;
+}
+
+.rpg-actual {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+
+  font-family: roboto;
+  /* rounded edges */
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.rpg-image {
+  grid-area: image;
+  background: url(https://images.unsplash.com/photo-1655645502437-953438bc463d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80);
+  border: 1px solid red;
+  /* rounded edges*/
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.rpg-text {
+  grid-area: text;
+  margin: 25px;
+  border: 1px solid rgb(0, 138, 62);
+}
+
+.rpg-text .rpg-date {
+  font-size: 13px;
+  color: #b60000;
+  border: 1px solid rgb(41, 48, 138);
+}
+
+.rpg-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #662020;
+  border: 1px solid rgb(205, 219, 10);
+}
+
+.rpg-stats .stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: #ffffff;
 }

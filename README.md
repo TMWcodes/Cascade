@@ -1,6 +1,7 @@
 # Cascade
 
-CSS
+## CSS
+
 selector {
 property1: value1;
 property2: value2;
@@ -49,13 +50,16 @@ Worst - inline (in html)
 Mid - style element html
 Best - external css (link element)
 
-#Page themes
+### Page themes
 
 default
 light
 dark
 
-#Cards
+## Cards
 
-social media (twitter card), bordered space, with some text, header, footer with buttons, adapts to browser size.
-Deck of cards
+### Social media card
+
+(twitter card), bordered space, with some text, header, footer with buttons, adapts to browser size.
+
+### Deck of cards

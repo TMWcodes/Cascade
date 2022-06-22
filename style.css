@@ -6,7 +6,8 @@
 *,
 *::before,
 *::after {
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 :root {
@@ -14,6 +15,11 @@
   --text-color: black;
   --div-padding: 0px;
   --div-margin: 0px;
+  --clr-dark: rgb(13, 17, 19);
+  --clr-light: #fff;
+  --clr-accent-dark: rgb(0, 45, 97);
+  --clr-accent: rgb(75, 138, 180);
+  --clr-secondary: rgb(14, 133, 62);
 }
 
 .child {
@@ -79,15 +85,57 @@ h1 {
 }
 
 body {
-  /* font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  /* font-family: sans-serif;
+  font-size: 20px;
   font-weight: normal; */
   /* same as above */
   /* font: normal 16px, sans-serif; */
   /* dependant on variable, otherwise color */
-  background-color: var(--background-color, rgb(233, 233, 233));
+  background-color: var(--background-color, rgb(167, 57, 57));
+  min-height: 100vh;
   /* line-height: 1em; */
 }
+
+/* animated card start */
+.ani-card {
+  color: var(--clr-light);
+  background-image: url("img/green-garage.jpg");
+  max-width: 35ch;
+  padding: 10rem 0 0;
+}
+
+.ani-card-content {
+  --padding: 1.5em;
+  padding: var(--padding);
+  /* background: hsl(0 0% 0% / 0.5); */
+  background: linear-gradient(
+    hsl(0 0% 0% /0),
+    hsl(0 0% 0% /0.3) 10%,
+    hsl(0 0% 0% /1)
+  );
+}
+
+.ani-card-title {
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+  /* outline: 1px solid red; */
+}
+.ani-card-title::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: var(--clr-accent);
+}
+.ani-card .button {
+  /* background-color: #196997; */
+  color: var(--clr-accent);
+}
+
+/* animated card end  */
 
 body .green {
   color: rgb(21, 75, 75);
@@ -374,7 +422,7 @@ a:active {
 .rpg-image {
   grid-area: image;
   background: url(https://images.unsplash.com/photo-1655645502437-953438bc463d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80);
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* rounded edges*/
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -390,7 +438,7 @@ a:active {
 .rpg-text .rpg-date {
   font-size: 15px;
   color: #b60000;
-  border: 1px solid #196997;
+  /* border: 1px solid #196997; */
   font-family: tahoma;
 }
 

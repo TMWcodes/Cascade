@@ -136,6 +136,13 @@ body {
   bottom: 0;
   width: calc(100% + var(--padding));
   background: var(--clr-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.ani-card:hover .ani-card-title::after {
+  transform: scaleX(1);
 }
 
 .ani-card-body {

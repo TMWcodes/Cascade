@@ -102,10 +102,17 @@ body {
   background-image: url("img/green-garage.jpg");
   max-width: 35ch;
   padding: 10rem 0 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.ani-card:hover {
+  transform: scale(1.025);
 }
 
 .ani-card-content {
-  --padding: 1.5em;
+  --padding: 1.5rem;
   padding: var(--padding);
   /* background: hsl(0 0% 0% / 0.5); */
   background: linear-gradient(
@@ -125,14 +132,29 @@ body {
   content: "";
   position: absolute;
   height: 2px;
-  left: 0;
+  left: calc(var(--padding) * -1);
   bottom: 0;
-  width: 100%;
+  width: calc(100% + var(--padding));
   background: var(--clr-accent);
 }
+
+.ani-card-body {
+  color: rgba(255, 255, 255 / 0.8);
+}
+
 .ani-card .button {
   /* background-color: #196997; */
-  color: var(--clr-accent);
+  color: var(--clr-light);
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  background-color: var(--clr-accent-dark);
+  padding: 0.5em 1.25em;
+}
+
+.ani-card .button:hover,
+.button:focus {
+  background-color: var(--clr-accent);
 }
 
 /* animated card end  */

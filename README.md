@@ -64,6 +64,8 @@ dark
 
 ### Deck of cards
 
-#### notes
+## Parallax scrolling
+
+##### notes
 
 limiting transitions to transforms and opacity for better performing transitions.

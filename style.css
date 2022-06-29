@@ -121,29 +121,37 @@ body {
     hsl(0 0% 0% /0.3) 10%,
     hsl(0 0% 0% /1)
   );
-  transform: translateY(65%);
-  transition: transform 500ms ease;
 }
 
-.ani-card:hover .ani-card-content,
-.ani-card:focus-within .ani-card-content {
-  transform: translateY(0);
-  transition-delay: 300ms;
-}
+@media (hover) {
+  .ani-card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .ani-card:hover .ani-card-content,
+  .ani-card:focus-within .ani-card-content {
+    transform: translateY(0);
+    transition-delay: 300ms;
+  }
 
-.ani-card:focus-within .ani-card-content {
-  transition-duration: 0ms;
-}
+  .ani-card:focus-within .ani-card-content {
+    transition-duration: 0ms;
+  }
 
-.ani-card-content > *:not(.ani-card-title) {
-  opacity: 0;
-  transition: opacity 500ms linear;
-}
+  .ani-card-content > *:not(.ani-card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
 
-.ani-card:hover .ani-card-content > *:not(.ani-card-title),
-.ani-card:focus-within .ani-card-content > *:not(.ani-card-title) {
-  opacity: 1;
-  transition-delay: 600ms;
+  .ani-card:hover .ani-card-content > *:not(.ani-card-title),
+  .ani-card:focus-within .ani-card-content > *:not(.ani-card-title) {
+    opacity: 1;
+    transition-delay: 600ms;
+  }
+
+  .ani-card-title::after {
+    transform: scaleX(0);
+  }
 }
 
 .ani-card-title {

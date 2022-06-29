@@ -140,7 +140,8 @@ body {
   transition: opacity 500ms linear;
 }
 
-.ani-card:hover .ani-card-content > *:not(.ani-card-title) {
+.ani-card:hover .ani-card-content > *:not(.ani-card-title),
+.ani-card:focus-within .ani-card-content > *:not(.ani-card-title) {
   opacity: 1;
   transition-delay: 600ms;
 }
@@ -223,6 +224,16 @@ h2 {
 }
 
 /* card  */
+/* //adaptive option for cards  */
+.card-grid {
+  display: grid;
+  /* 1fr can expand as much as needed  */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: flex-start;
+  /* border: 1px solid #00f078; */
+}
+
 .card {
   --padding: 1rem;
   /* padding: 1rem; */
@@ -231,50 +242,11 @@ h2 {
   border-radius: 0.25rem;
 }
 
-.card.card-shadow {
-  border: none;
-  /* x offset, y offset, blur, spread, color*/
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 .card-header {
   padding: var(--padding);
   padding-bottom: 0;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-}
-
-/* //adaptive option for cards  */
-.card-grid {
-  display: grid;
-  /* 1fr can expand as much as needed  */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  align-items: flex-start;
-}
-
-.card-header.card-image {
-  padding: 0;
-  /* hides overflow (corners) */
-  overflow: hidden;
-}
-
-.card-header.card-image > img {
-  display: block;
-  width: 100%;
-  /* max-width: 600px; */
-  max-height: 250px;
-  aspect-ratio: 16 / 9;
-  /* maintains aspect ratio */
-  object-fit: cover;
-  /* focus on centre */
-  object-position: center;
-  transition: 100ms transform ease-in-out;
-}
-
-/* when hovering over zoom in effect */
-.card:hover > .card-header.card-image > img {
-  transform: scale(1.025);
 }
 
 .card-body {
@@ -321,6 +293,36 @@ h2 {
 /* button next to another button, add margin */
 .btn + .btn {
   margin-left: 0.5rem;
+}
+
+.card.card-shadow {
+  border: none;
+  /* x offset, y offset, blur, spread, color*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-header.card-image {
+  padding: 0;
+  /* hides overflow (corners) */
+  overflow: hidden;
+}
+
+.card-header.card-image > img {
+  display: block;
+  width: 100%;
+  /* max-width: 600px; */
+  max-height: 250px;
+  aspect-ratio: 16 / 9;
+  /* maintains aspect ratio */
+  object-fit: cover;
+  /* focus on centre */
+  object-position: center;
+  transition: 100ms transform ease-in-out;
+}
+
+/* when hovering over zoom in effect */
+.card:hover > .card-header.card-image > img {
+  transform: scale(1.025);
 }
 
 /* submit button */
@@ -446,19 +448,26 @@ a:active {
 /* RPG Cards */
 
 .rpg-base {
-  width: 20vw;
-  height: 65vh;
+  /* width: 20vw;
+  height: 65vh; */
   /* width: fit-content; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: black; */
-  overflow: hidden;
+  /* border: 1px #00f078 solid; */
+  /* overflow: hidden; */
 }
+/* display: grid; */
+/* 1fr can expand as much as needed  */
+/* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 1rem;
+align-items: flex-start; */
 
 .rpg-actual {
   display: grid;
   grid-template-columns: 300px;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  gap: 1rem;
   grid-template-rows: 210px 210px 80px;
   grid-template-areas: "image" "text" "stats";
 

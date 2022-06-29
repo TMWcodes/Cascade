@@ -63,3 +63,7 @@ dark
 (twitter card), bordered space, with some text, header, footer with buttons, adapts to browser size.
 
 ### Deck of cards
+
+#### notes
+
+limiting transitions to transforms and opacity for better performing transitions.

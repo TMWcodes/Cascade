@@ -1,6 +1,16 @@
 # Cascade
 
-## CSS
+## Testing css capabilities.
+
+- create page theme buttons
+
+- create social media card
+
+- create parallax effect
+
+- create deck of cards
+
+### CSS basics
 
 selector {
 property1: value1;
@@ -46,17 +56,11 @@ everything
   font-family: Arial;
   }
 
-Worst - inline (in html)
-Mid - style element html
-Best - external css (link element)
-
 ### Page themes
 
 default
 light
 dark
-
-## Cards
 
 ### Social media card
 
@@ -64,8 +68,20 @@ dark
 
 ### Deck of cards
 
-## Parallax scrolling
+### Parallax scrolling
+
+## references
+
+www.youtube.com. (n.d.). Learn CSS Position In 9 Minutes. [online] Available at: https://www.youtube.com/watch?v=jx5jmI0UlXU&ab_channel=WebDevSimplified [Accessed 2 Jul. 2022].
+www.youtube.com. (n.d.). Learn Every CSS Selector In 20 Minutes. [online] Available at: https://www.youtube.com/watch?v=l1mER1bV0N0&ab_channel=WebDevSimplified [Accessed 2 Jul. 2022].
+CSS Cheat Sheet. (n.d.). CSS Cheat Sheet. [online] Available at: https://adam-marsden.co.uk/css-cheat-sheet#selectors [Accessed 2 Jul. 2022].
 
 ##### notes
 
-limiting transitions to transforms and opacity for better performing transitions.
+Limiting transitions to transforms and opacity for better performing transitions.
+
+Worst - inline (in html)
+Mid - style element html
+Best - external css (link element)
+
+relatives, absolute, fixed, sticky

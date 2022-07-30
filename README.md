@@ -1,17 +1,20 @@
 # Cascade
 
+Testing CSS features, using as close to pure CSS as possible to achieve desired results.
+
 ## Testing css capabilities.
 
-- create page theme buttons
+- create Page theme buttons
 
-- create social media card
+- create Social media cards
 
-- create parallax effect
+- create Parallax effect
 
-- create deck of cards
+- create Deck of cards
 
 ### CSS basics
 
+```
 selector {
 property1: value1;
 property2: value2;
@@ -55,33 +58,44 @@ everything
 - {
   font-family: Arial;
   }
+```
 
 ### Page themes
 
-default
-light
-dark
+- Default/original
+- Light
+- Dark
 
 ### Social media card
 
-(twitter card), bordered space, with some text, header, footer with buttons, adapts to browser size.
+e.g. twitter card
+
+- bordered space, with some text, header, footer with buttons, adapts to browser size.
 
 ### Deck of cards
 
 ### Parallax scrolling
 
-## references
+Different layers moving at different speeds.
 
-www.youtube.com. (n.d.). Learn CSS Position In 9 Minutes. [online] Available at: https://www.youtube.com/watch?v=jx5jmI0UlXU&ab_channel=WebDevSimplified [Accessed 2 Jul. 2022].
-www.youtube.com. (n.d.). Learn Every CSS Selector In 20 Minutes. [online] Available at: https://www.youtube.com/watch?v=l1mER1bV0N0&ab_channel=WebDevSimplified [Accessed 2 Jul. 2022].
-CSS Cheat Sheet. (n.d.). CSS Cheat Sheet. [online] Available at: https://adam-marsden.co.uk/css-cheat-sheet#selectors [Accessed 2 Jul. 2022].
+## References
 
-##### notes
+- Comments
+<!-- 
+> www.youtube.com. (n.d.). Learn CSS Position In 9 Minutes. [online] Available at: https://www.youtube.com/watch?v=jx5jmI0UlXU&ab_channel=WebDevSimplified [Accessed 2 Jul. 2022].
 
-Limiting transitions to transforms and opacity for better performing transitions.
+> www.youtube.com. (n.d.). Learn Every CSS Selector In 20 Minutes. [online] Available at: https://www.youtube.com/watch?v=l1mER1bV0N0&ab_channel=WebDevSimplified [Accessed 2 Jul. 2022].
 
-Worst - inline (in html)
-Mid - style element html
-Best - external css (link element)
+> CSS Cheat Sheet. (n.d.). CSS Cheat Sheet. [online] Available at: https://adam-marsden.co.uk/css-cheat-sheet#selectors [Accessed 2 Jul. 2022]. -->
 
-relatives, absolute, fixed, sticky
+##### Notes
+
+- Comments
+<!-- Limiting transitions to transforms and opacity (for better performing transitions.)
+
+
+- Worst - inline (in html)
+- Mid - style element html
+- Best - external css (link element)
+
+- relatives, absolute, fixed, sticky -->

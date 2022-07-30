@@ -1,0 +1,26 @@
+/* inspect (box model, dev tools) */
+
+.box1 {
+  height: 100px;
+  width: 100px;
+  /* % of screen */
+  /* width: 10%; */
+  /* em scales off font size */
+  /* width: 1em; */
+  /* width: 10rem; */
+  padding: 20px;
+  margin: 10px;
+  border: 10px solid rgb(21, 185, 76);
+  background-color: rgb(166, 194, 166);
+  float: right;
+}
+
+#box2 {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid rgb(13, 63, 155);
+  background-color: rgb(181, 166, 221);
+  float: right;
+}

@@ -13,7 +13,7 @@
 :root {
   --div-background-color: rgb(99, 99, 99);
   --text-color: black;
-  --div-padding: 0px;
+  --div-padding: 2px;
   --div-margin: 0px;
   --clr-dark: rgb(13, 17, 19);
   --clr-light: #fff;
@@ -27,11 +27,11 @@
   color: var(--text-color);
 }
 
-.one {
-  --div-background-color: rgb(159, 159, 199);
+.text-background-one {
+  --div-background-color: rgb(245, 245, 245);
 }
 
-.two {
+.text-background-two {
   --text-color: white;
 }
 
@@ -41,9 +41,14 @@
   margin: var(--div-margin);
 }
 .two-three {
-  --text-color: orange;
+  --text-color: rgb(121, 46, 128);
   padding: var(--div-padding);
   margin: var(--div-margin);
+}
+
+.two-four {
+  font-weight: 600;
+  font-style: italic;
 }
 .block {
   float: left;
@@ -74,7 +79,6 @@
 .form-group {
   padding-bottom: 10px;
 }
-/* button styling */
 
 .h1class {
   color: rgb(23, 24, 21);
@@ -106,6 +110,7 @@ body {
   /* toggle overflow hidden  */
   overflow: hidden;
   transition: transform 500ms ease;
+  margin-bottom: 10px;
 }
 
 .ani-card:hover {
@@ -373,20 +378,23 @@ h2 {
   border-bottom: 5px rgb(60, 54, 54) dashed;
   border-bottom-width: 1px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .text-box2 {
   background-color: #333;
   border-left: 5px rgb(172, 172, 172) solid;
   border-bottom: 5px rgb(184, 184, 184) dashed;
-  border-bottom-width: 4px;
+  border-bottom-width: 2px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .text-box3 {
   background-color: #e9e9e9;
   border: 2px rgb(104, 104, 104) dashed;
   padding: 10px;
+  border-left: 5px rgb(59, 54, 54) solid;
 }
 
 .text-box3 h2 {
@@ -414,31 +422,6 @@ a:active {
   color: green;
 }
 
-/* inspect (box model, dev tools) */
-.box1 {
-  height: 100px;
-  width: 100px;
-  /* % of screen */
-  /* width: 10%; */
-  /* em scales off font size */
-  /* width: 1em; */
-  /* width: 10rem; */
-  padding: 20px;
-  margin: 10px;
-  border: 10px solid rgb(21, 185, 76);
-  background-color: rgb(166, 194, 166);
-  float: right;
-}
-
-#box2 {
-  height: 50px;
-  width: 50px;
-  padding: 10px;
-  margin: 10px;
-  border: 5px solid rgb(13, 63, 155);
-  background-color: rgb(181, 166, 221);
-  float: right;
-}
 #main-block {
   float: left;
   width: 70%;
@@ -464,6 +447,7 @@ a:active {
   justify-content: center;
   /* border: 1px #00f078 solid; */
   /* overflow: hidden; */
+  margin: 10px;
 }
 /* display: grid; */
 /* 1fr can expand as much as needed  */
